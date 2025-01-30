@@ -132,5 +132,8 @@ function fibonacci() {
     
     }
 
+}
 
+function emptyFunc() {
+    
 }
