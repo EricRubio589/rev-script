@@ -137,3 +137,8 @@ function fibonacci() {
 function emptyFunc() {
     
 }
+
+function newFunction() {
+
+    
+}
