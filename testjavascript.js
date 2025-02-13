@@ -1,13 +1,22 @@
-function range(start,end) {
+
+
+function range(start,end, step) {
+    step = step || 1;
     let rangeArray = [];
-    for (let i=start;i<=end;i++){
-        rangeArray.push(i)
-    }
+    if (end > start) {
+      for (let i=start;i<=end;i+=step){
+          rangeArray.push(i)
+      }
+    } else {
+        for (let i=end;i>=start;i--){
+            rangeArray.push(i)
+        }
+    }  
     console.log(rangeArray)
     return rangeArray;
 }
 
-let arrayRange = range(1,10)
+let arrayRange = range(20,10)
 
 function sumArray(array){
     let sumArrayValue = 0;
