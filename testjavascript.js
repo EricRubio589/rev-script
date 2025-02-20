@@ -1,23 +1,24 @@
 
-
+//////////////////////////////////////////////// The sum of a range /////////////////////////////////////////////////////////////////
 function range(start,end, step) {
-    step = step || 1;
+    
     let rangeArray = [];
     if (end > start) {
+        step = step || 1;
       for (let i=start;i<=end;i+=step){
           rangeArray.push(i)
       }
     } else {
-        // for (let i=end;i>=start;i--){
-        //     rangeArray.push(i)
-        // }
-        console.log("Perrito")
+        step = step || -1;
+        for (let i=start;i>=end;i+=step){
+            rangeArray.push(i)
+        }
     }  
     console.log(rangeArray)
     return rangeArray;
 }
 
-let arrayRange = range(100,10)
+let arrayRange = range(10,100)
 
 function sumArray(array){
     let sumArrayValue = 0;
