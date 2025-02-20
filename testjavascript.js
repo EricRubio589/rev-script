@@ -8,15 +8,16 @@ function range(start,end, step) {
           rangeArray.push(i)
       }
     } else {
-        for (let i=end;i>=start;i--){
-            rangeArray.push(i)
-        }
+        // for (let i=end;i>=start;i--){
+        //     rangeArray.push(i)
+        // }
+        console.log("Perrito")
     }  
     console.log(rangeArray)
     return rangeArray;
 }
 
-let arrayRange = range(20,10)
+let arrayRange = range(100,10)
 
 function sumArray(array){
     let sumArrayValue = 0;
